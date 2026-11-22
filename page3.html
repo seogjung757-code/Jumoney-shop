@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="주머니티켓 공식 안내 페이지. 휴대폰 소액결제 · 정보이용료 · 상품권 매입 관련 안내와 고객 문의 채널을 확인하세요.">
+<meta name="theme-color" content="#101b2b">
+<title>주머니티켓 | 가개통·금융 안내</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap');
+:root{--ink:#172233;--navy:#101b2b;--navy2:#1b2c42;--gold:#c7a875;--gold2:#e6d4ae;--paper:#f7f6f2;--muted:#687487;--line:#e8e5dd;--white:#fff;--shadow:0 24px 70px rgba(16,27,43,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Noto Sans KR',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+header{height:82px;position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(23,34,51,.08)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-size:21px;font-weight:800;letter-spacing:-1px}.brand-mark{width:34px;height:34px;border:1px solid var(--gold);border-radius:10px;display:grid;place-items:center;color:var(--gold);font-family:Georgia,serif;font-size:19px}.brand span:last-child{color:var(--navy)}.brand em{font-style:normal;color:#a88750}nav{display:flex;align-items:center;gap:34px;font-size:13px;font-weight:600;color:#566174}nav a:hover{color:#a88750}.nav-cta{padding:11px 18px;border:1px solid var(--gold);border-radius:4px;color:#8e713f}
+.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 80% 15%,rgba(199,168,117,.19),transparent 35%),linear-gradient(115deg,#101b2b 0%,#192b42 62%,#233750 100%);padding:112px 0 108px}.hero:before{content:"";position:absolute;width:600px;height:600px;border:1px solid rgba(230,212,174,.16);border-radius:50%;right:-130px;top:-260px;box-shadow:0 0 0 55px rgba(230,212,174,.035),0 0 0 110px rgba(230,212,174,.025)}.hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid rgba(230,212,174,.13);border-radius:50%;right:70px;bottom:-280px}.hero-inner{position:relative;z-index:1;max-width:760px}.eyebrow,.kicker{font-size:11px;letter-spacing:2.8px;font-weight:700;color:var(--gold2)}.hero h1{font-size:clamp(38px,5.5vw,66px);line-height:1.23;letter-spacing:-2.8px;margin:24px 0 20px;font-weight:700}.hero p{font-size:16px;line-height:1.9;color:#c8d0db;max-width:570px;margin:0 0 34px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{min-height:49px;padding:13px 22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.1px;border-radius:3px;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:#152235}.btn-line{border:1px solid rgba(255,255,255,.35);color:#fff}.hero-note{margin-top:62px;padding-top:22px;border-top:1px solid rgba(255,255,255,.15);display:flex;gap:32px;flex-wrap:wrap;color:#b9c3cf;font-size:11px;letter-spacing:.4px}.hero-note b{color:#f0e3c9;font-weight:600;margin-right:7px}
+section{padding:96px 0}.section-head{margin-bottom:42px}.section-head.center{text-align:center}.kicker{color:#a88750}.section-head h2{font-size:34px;letter-spacing:-1.5px;margin:10px 0 8px;color:var(--navy)}.section-head p{margin:0;color:var(--muted);font-size:14px}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}.about-copy h3{font-size:27px;letter-spacing:-1px;line-height:1.45;margin:0 0 16px}.about-copy p{font-size:14px;color:var(--muted);margin:0}.about-stamp{margin-top:28px;display:inline-flex;align-items:center;gap:12px;color:#9a7b48;font-size:11px;letter-spacing:1.5px}.about-stamp:before{content:"";width:38px;height:1px;background:var(--gold)}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}.feature{padding:25px 24px;background:var(--paper);border:1px solid #efede7;min-height:150px}.feature .n{font-family:Georgia,serif;color:#b59661;font-size:13px}.feature h4{font-size:16px;margin:12px 0 5px}.feature p{font-size:12px;color:var(--muted);margin:0}
+.service{background:var(--paper)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{background:#fff;border:1px solid #ebe8e0;padding:30px 28px;min-height:222px;transition:.2s}.service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.service-icon{width:42px;height:42px;border:1px solid #d9c49d;color:#9b7c49;display:grid;place-items:center;font-family:Georgia,serif;font-size:18px}.service-card h3{font-size:18px;margin:20px 0 8px}.service-card p{font-size:13px;color:var(--muted);margin:0}.notice{margin-top:22px;padding:18px 20px;background:#fff;border-left:3px solid var(--gold);font-size:12px;color:#677386}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.process{padding:30px 28px 34px;border-right:1px solid var(--line)}.process:last-child{border:0}.process .n{font-family:Georgia,serif;color:#b59661;font-size:13px}.process h3{font-size:17px;margin:13px 0 7px}.process p{font-size:12px;color:var(--muted);margin:0}
+.contact{background:var(--navy);color:#fff}.contact-layout{display:grid;grid-template-columns:1fr .85fr;gap:60px;align-items:center}.contact h2{font-size:36px;line-height:1.35;letter-spacing:-1.5px;margin:13px 0}.contact-copy p{color:#b9c3cf;font-size:14px;max-width:460px}.contact-box{background:#fff;color:var(--ink);padding:12px 28px}.contact-link{display:flex;align-items:center;justify-content:space-between;padding:21px 0;border-bottom:1px solid var(--line)}.contact-link:last-child{border:0}.contact-link strong{display:block;font-size:15px}.contact-link small{display:block;font-size:11px;color:var(--muted);margin-top:3px}.link-arrow{font-size:12px;color:#987947;border:1px solid #d9c49d;padding:7px 12px}.link-disabled{font-size:11px;color:#9299a4;border:1px solid #e4e6e9;padding:7px 12px}
+footer{background:#0b1421;color:#aeb8c5;padding:42px 0 30px;font-size:11px}.footer-top{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-brand{font-size:18px;color:#fff;font-weight:800}.footer-desc{margin:6px 0 0;color:#8793a3}.legal{border-top:1px solid rgba(255,255,255,.12);margin-top:25px;padding-top:20px;color:#8995a5;line-height:2}.float-wrap{position:fixed;right:22px;bottom:22px;z-index:15;display:flex;flex-direction:column;gap:9px}.float{display:flex;align-items:center;gap:8px;padding:12px 17px;border-radius:3px;font-size:12px;font-weight:700;box-shadow:0 8px 28px rgba(0,0,0,.17)}.float.telegram{background:#fff;color:#172233}.float.kakao{background:#f4d85c;color:#352c10}
+@media(max-width:800px){header{height:70px}.wrap{width:calc(100% - 36px)}nav{gap:15px;font-size:11px}.nav-cta{display:none}.hero{padding:82px 0 70px}.hero h1{font-size:44px}.hero-note{margin-top:45px;gap:14px}.about-grid,.contact-layout{grid-template-columns:1fr;gap:34px}.service-grid{grid-template-columns:1fr}.service-card{min-height:0}.process-grid{grid-template-columns:1fr}.process{border-right:0;border-bottom:1px solid var(--line)}.process:last-child{border:0}section{padding:72px 0}.contact h2{font-size:31px}}
+@media(max-width:480px){.wrap{width:calc(100% - 30px)}.brand{font-size:18px}nav{gap:11px;font-size:10px}nav a:nth-child(2){display:none}.hero h1{font-size:38px;letter-spacing:-1.8px}.hero p{font-size:14px}.hero-note{font-size:10px}.section-head h2{font-size:29px}.feature-list{grid-template-columns:1fr}.contact-box{padding:8px 18px}.float-wrap{right:12px;bottom:12px}.float{padding:10px 13px}}
+/* Cherry blossom garden atmosphere */
+.hero{min-height:650px;background:radial-gradient(ellipse at 50% 5%,rgba(198,151,235,.36),transparent 36%),radial-gradient(ellipse at 50% 72%,rgba(244,169,203,.24),transparent 48%),linear-gradient(180deg,#211d3d 0%,#3b315d 46%,#69476f 78%,#342b4b 100%);}
+.hero:before{width:780px;height:780px;right:calc(50% - 390px);top:-510px;border-color:rgba(255,225,242,.18);box-shadow:0 0 0 70px rgba(255,224,241,.035),0 0 0 145px rgba(190,155,255,.045),0 0 100px rgba(255,192,225,.2)}
+.hero:after{width:100%;height:170px;left:0;right:auto;bottom:-110px;border:0;border-radius:50%;background:radial-gradient(ellipse at center,rgba(244,197,223,.23),transparent 70%);box-shadow:none}
+.garden-trees{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.92;filter:drop-shadow(0 8px 18px rgba(15,12,34,.22))}
+.hero-inner{z-index:2;text-shadow:0 2px 22px rgba(13,13,32,.25)}
+.hero-inner:before{content:"";position:absolute;inset:-42px -54px -36px -38px;z-index:-1;border:1px solid rgba(255,230,246,.13);border-radius:28px;background:linear-gradient(110deg,rgba(21,20,46,.56),rgba(39,30,67,.22));backdrop-filter:blur(3px);box-shadow:0 25px 80px rgba(13,10,35,.15)}
+.hero h1{color:#fff8fd;text-shadow:0 4px 28px rgba(244,169,203,.24)}
+.hero p{color:#f0e6f3}
+.hero-note{border-top-color:rgba(255,226,243,.25)}
+section#about,section#process,section#trade,section#live{position:relative;background:linear-gradient(180deg,#fffafd 0%,#f8f3ff 48%,#fff9fc 100%)}
+section#about:before,section#process:before,section#trade:before,section#live:before{content:"✿";position:absolute;right:5%;top:24px;font-size:46px;color:rgba(226,164,204,.16);pointer-events:none;transform:rotate(18deg)}
+.service{background:linear-gradient(145deg,#f8effb 0%,#fff5fa 48%,#f2efff 100%)!important}
+.contact{background:radial-gradient(ellipse at 80% 10%,rgba(169,138,255,.24),transparent 35%),linear-gradient(125deg,#171b35,#35264f 70%,#503455);}
+.contact-box{border-radius:18px;box-shadow:0 20px 60px rgba(10,8,30,.22)}
+@media(max-width:800px){.hero{min-height:620px}.garden-trees{opacity:.72}.hero-inner:before{inset:-25px -15px -24px}}
+@media(max-width:480px){.hero{min-height:650px}.garden-trees{width:150%;max-width:none;left:-25%;opacity:.62}.hero-inner:before{background:rgba(23,20,48,.62);backdrop-filter:blur(4px)}}
+/* Cherry blossom + purple glow premium refresh */
+:root{--blossom:#f4a9cb;--orchid:#a98aff;--violet:#7355c7;--gold:#d6b77d;--gold2:#f2dfbd;--shadow:0 22px 60px rgba(73,48,112,.13)}
+header{background:rgba(250,247,253,.92);border-bottom-color:rgba(169,138,255,.18)}
+.brand-mark{border-color:#d7a9ce;color:#9b6aa8;box-shadow:0 0 18px rgba(244,169,203,.2)}
+.brand em,nav a:hover{color:#a36ca6}
+.hero{background:radial-gradient(ellipse at 78% 18%,rgba(169,138,255,.32),transparent 33%),radial-gradient(ellipse at 12% 88%,rgba(244,169,203,.22),transparent 35%),linear-gradient(118deg,#101a30 0%,#252447 52%,#49345f 100%)}
+.hero:before{border-color:rgba(244,209,232,.24);box-shadow:0 0 0 55px rgba(169,138,255,.07),0 0 0 110px rgba(244,169,203,.045),0 0 90px rgba(169,138,255,.13)}
+.hero:after{border-color:rgba(244,169,203,.25);box-shadow:0 0 70px rgba(169,138,255,.13)}
+.eyebrow,.hero-note b{color:#f3cce1}.kicker{color:#a36ca6}
+.btn{border-radius:999px}.btn-gold{background:linear-gradient(115deg,#f2d7a8,#d6b77d 55%,#f6e5c5);box-shadow:0 8px 26px rgba(214,183,125,.23)}
+.btn-line{border-color:rgba(244,209,232,.55);background:rgba(255,255,255,.045);backdrop-filter:blur(8px)}
+section:not(.hero):not(.contact){background:linear-gradient(180deg,#fff 0%,#fdfaff 100%)}
+.service{background:linear-gradient(145deg,#fbf7ff 0%,#fff7fb 52%,#f7f4ff 100%)!important}
+.feature{background:linear-gradient(145deg,#fff 0%,#fcf8ff 100%);border-color:#eee3f2;border-radius:18px;box-shadow:0 10px 30px rgba(116,80,150,.055)}
+.service-card{border:1px solid #eee2f1;border-radius:18px;background:linear-gradient(145deg,#fff 0%,#fffbff 100%);box-shadow:0 12px 32px rgba(87,58,123,.06);position:relative;overflow:hidden}
+.service-card:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,#f2b8d2,#ad91f2,#dfc18d);opacity:.85}
+.service-card:hover{box-shadow:0 20px 45px rgba(122,82,160,.16);border-color:#d9c4ed}
+.service-icon{border-color:#e4c9df;color:#9d6da8;border-radius:13px;background:linear-gradient(145deg,#fff7fc,#f5efff)}
+.section-head h2{background:linear-gradient(100deg,#18253c,#7453a0 70%,#b276a2);-webkit-background-clip:text;background-clip:text;color:transparent}
+.notice,.secure-note{border-left-color:#b28ae8;background:linear-gradient(100deg,#fbf7ff,#fff9fc)}
+.process-grid{border-color:#eadff0}.process{border-color:#eadff0}
+.contact{background:radial-gradient(ellipse at 85% 10%,rgba(169,138,255,.25),transparent 36%),radial-gradient(ellipse at 8% 90%,rgba(244,169,203,.13),transparent 38%),linear-gradient(120deg,#111b30,#302846 75%,#463354)}
+.contact-box{border-radius:18px;box-shadow:0 20px 55px rgba(0,0,0,.2)}
+.link-arrow{border-radius:999px;border-color:#e0c6e6;color:#8c5c9a}
+.float{border-radius:999px}.float.kakao{box-shadow:0 8px 28px rgba(244,216,92,.25)}
+.petal-field{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:12}
+.petal{position:absolute;top:-10vh;width:14px;height:20px;border-radius:85% 15% 75% 25%;background:linear-gradient(145deg,rgba(255,239,249,.98),rgba(244,169,203,.84) 58%,rgba(205,139,211,.7));box-shadow:0 1px 10px rgba(205,137,191,.24);opacity:0;animation:petal-drift 20s linear infinite;will-change:top,translate,rotate}
+.petal:nth-child(1){left:45%;animation-delay:26.63s;animation-duration:25s;scale:0.68;}
+.petal:nth-child(2){left:82%;animation-delay:24.26s;animation-duration:18s;scale:0.81;}
+.petal:nth-child(3){left:22%;animation-delay:21.89s;animation-duration:25s;scale:0.94;}
+.petal:nth-child(4){left:59%;animation-delay:19.52s;animation-duration:18s;scale:1.07;}
+.petal:nth-child(5){left:96%;animation-delay:17.15s;animation-duration:25s;scale:0.55;}
+.petal:nth-child(6){left:36%;animation-delay:14.78s;animation-duration:18s;scale:0.68;}
+.petal:nth-child(7){left:73%;animation-delay:12.41s;animation-duration:25s;scale:0.81;}
+.petal:nth-child(8){left:13%;animation-delay:10.04s;animation-duration:18s;scale:0.94;}
+.petal:nth-child(9){left:50%;animation-delay:7.67s;animation-duration:25s;scale:1.07;}
+.petal:nth-child(10){left:87%;animation-delay:5.30s;animation-duration:18s;scale:0.55;}
+.petal:nth-child(11){left:27%;animation-delay:2.93s;animation-duration:25s;scale:0.68;}
+.petal:nth-child(12){left:64%;animation-delay:0.56s;animation-duration:18s;scale:0.81;}
+.petal:nth-child(13){left:4%;animation-delay:27.19s;animation-duration:25s;scale:0.94;}
+.petal:nth-child(14){left:41%;animation-delay:24.82s;animation-duration:18s;scale:1.07;}
+.petal:nth-child(15){left:78%;animation-delay:22.45s;animation-duration:25s;scale:0.55;}
+.petal:nth-child(16){left:18%;animation-delay:20.08s;animation-duration:18s;scale:0.68;}
+.petal:nth-child(17){left:55%;animation-delay:17.71s;animation-duration:25s;scale:0.81;}
+.petal:nth-child(18){left:92%;animation-delay:15.34s;animation-duration:18s;scale:0.94;}
+.petal:nth-child(19){left:32%;animation-delay:12.97s;animation-duration:25s;scale:1.07;}
+.petal:nth-child(20){left:69%;animation-delay:10.60s;animation-duration:18s;scale:0.55;}
+.petal:nth-child(21){left:9%;animation-delay:8.23s;animation-duration:25s;scale:0.68;}
+.petal:nth-child(22){left:46%;animation-delay:5.86s;animation-duration:18s;scale:0.81;}
+.petal:nth-child(23){left:83%;animation-delay:3.49s;animation-duration:25s;scale:0.94;}
+.petal:nth-child(24){left:23%;animation-delay:1.12s;animation-duration:18s;scale:1.07;}
+.petal:nth-child(25){left:60%;animation-delay:27.75s;animation-duration:25s;scale:0.55;}
+.petal:nth-child(26){left:0%;animation-delay:25.38s;animation-duration:18s;scale:0.68;}
+.petal:nth-child(27){left:37%;animation-delay:23.01s;animation-duration:25s;scale:0.81;}
+.petal:nth-child(28){left:74%;animation-delay:20.64s;animation-duration:18s;scale:0.94;}
+@keyframes petal-drift{0%{top:-10vh;opacity:0;translate:0 0;rotate:0deg}7%{opacity:.82}48%{translate:55px 48vh;rotate:210deg}90%{opacity:.72}100%{top:110vh;opacity:0;translate:-35px 110vh;rotate:520deg}}
+@media(prefers-reduced-motion:reduce){.petal{animation:none;display:none}.service-card,.btn{transition:none}}
+@media(max-width:800px){.petal{opacity:.55}.service-card{border-radius:15px}}
+
+</style>
+</head>
+<body>
+<div class="petal-field" aria-hidden="true"><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i></div>
+<header><div class="wrap nav"><a class="brand" href="#home"><span class="brand-mark">J</span><span>주머니<em>티켓</em></span></a><nav><a href="index.html">1페이지 · 소액결제/상품권</a><a href="page2.html">2페이지 · 휴대폰 매입</a><a href="page3.html">3페이지 · 가개통/금융안내</a><a href="#about">회사소개</a><a href="#device">서비스 안내</a><a href="#process">이용절차</a><a href="page2.html#apply">휴대폰 매입 신청</a><a href="#finance">금융정보 안내</a><a href="#contact">고객센터</a><a class="nav-cta" href="#contact">상담 채널</a></nav></div></header>
+<main id="home">
+<section class="hero"><svg class="garden-trees" viewBox="0 0 1600 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="none" stroke="#bd8eb8" stroke-width="15" stroke-linecap="round"><path d="M-30 620Q180 400 170 160T390 20M1630 620Q1430 390 1440 160T1230 20"/></g><g fill="#f5c8e1"><circle cx="150" cy="140" r="32"/><circle cx="260" cy="220" r="24"/><circle cx="1430" cy="150" r="34"/><circle cx="1320" cy="260" r="25"/></g></svg><div class="wrap"><div class="hero-inner"><div class="eyebrow">JUMONEY TICKET · SERVICE GUIDE 03</div><h1>휴대전화와 금융,<br>꼼꼼하게 확인하고.</h1><p>가개통·단말기 관련 문의와 금융정보 확인에 필요한 기본 사항을 안내합니다. 실제 가능 여부와 조건은 통신사·금융회사·관련 기관의 공식 심사와 약관에 따릅니다.</p><div class="actions"><a class="btn btn-gold" href="#device">가개통 안내 보기</a><a class="btn btn-line" href="#contact">공식 문의 채널</a></div><div class="hero-note"><span><b>01</b> 본인 명의 확인</span><span><b>02</b> 약관·비용 확인</span><span><b>03</b> 공식 절차 준수</span></div></div></div></section>
+<section id="about"><div class="wrap about-grid"><div class="about-copy"><div class="kicker">PAGE 03 · GUIDE</div><h3>중요한 계약일수록<br>조건을 먼저 확인하세요.</h3><p>주머니티켓은 휴대전화 및 금융 관련 문의에 필요한 일반 정보를 안내합니다. 개통·할부·대출·금융상품의 승인이나 한도를 보장하지 않으며, 최종 결정은 해당 통신사 또는 금융회사의 정식 심사에 따릅니다.</p><div class="about-stamp">CLEAR TERMS · SAFE DECISIONS</div></div><div class="feature-list"><article class="feature"><div class="n">01 / IDENTITY</div><h4>명의자 본인 확인</h4><p>본인 명의와 신청 권한을 확인하는 절차가 우선입니다.</p></article><article class="feature"><div class="n">02 / CONTRACT</div><h4>계약 조건 확인</h4><p>할부금, 요금제, 약정, 위약금 등 전체 비용을 확인합니다.</p></article><article class="feature"><div class="n">03 / FINANCE</div><h4>금융정보 확인</h4><p>금융상품은 등록된 금융회사와 공식 채널에서 확인합니다.</p></article><article class="feature"><div class="n">04 / SAFETY</div><h4>불법 거래 예방</h4><p>명의대여, 허위 개통, 대출을 빙자한 휴대전화 개통은 피해야 합니다.</p></article></div></div></section>
+<section id="device" class="service"><div class="wrap"><div class="section-head center"><div class="kicker">MOBILE DEVICE GUIDE</div><h2>가개통 및 통신 관련 안내</h2><p>아래 내용은 일반 안내이며, 개별 개통·매입 가능 여부를 보장하지 않습니다.</p></div><div class="service-grid"><article class="service-card"><div class="service-icon">01</div><h3>가개통 관련 문의</h3><p>단말기 개통 상태, 명의자, 할부 계약 및 실제 사용 여부를 확인해야 합니다. 통신사 정책과 계약 내용에 따라 처리 가능 여부가 달라집니다.</p></article><article class="service-card"><div class="service-icon">02</div><h3>단말기 할부·요금 확인</h3><p>월 단말기 할부금, 통신요금, 부가서비스, 약정 기간 및 해지 시 위약금을 합산해 부담액을 확인하세요.</p></article><article class="service-card"><div class="service-icon">03</div><h3>명의·소유권 확인</h3><p>본인 명의가 아닌 회선이나 타인에게 양도할 목적으로 개통하는 거래는 분쟁과 피해 위험이 있습니다.</p></article><article class="service-card"><div class="service-icon">05</div><h3>통신사 공식 확인</h3><p>개통·해지·명의변경·요금 관련 최종 확인은 이용 중인 통신사의 공식 고객센터와 대리점을 이용하세요.</p></article><article class="service-card"><div class="service-icon">06</div><h3>피해 예방</h3><p>신분증, 인증번호, 유심, 계좌·비밀번호를 타인에게 넘기거나 원격 앱 설치를 요구하는 거래는 중단하세요.</p></article></div><div class="notice">주의: 타인 명의 개통, 명의 대여, 허위 개통, 휴대전화깡 또는 대출을 미끼로 한 개통·단말기 양도는 법적·금전적 피해로 이어질 수 있습니다. 이러한 방식의 거래는 안내하거나 중개하지 않습니다.</div></div></section>
+<section id="finance"><div class="wrap"><div class="section-head center"><div class="kicker">FINANCIAL INFORMATION</div><h2>금융 관련 정보 안내</h2><p>대출 승인·한도·금리·채무조정 결과를 보장하지 않습니다.</p></div><div class="process-grid"><article class="process"><div class="n">01 / CHECK</div><h3>금융회사 등록 여부 확인</h3><p>금융상품을 알아볼 때는 금융감독원 파인 등 공식 조회 경로에서 회사와 모집인의 등록 여부를 확인하세요.</p></article><article class="process"><div class="n">02 / COMPARE</div><h3>금리와 총비용 비교</h3><p>금리뿐 아니라 수수료, 상환 기간, 연체 이자, 중도상환 조건을 서면으로 확인하세요.</p></article><article class="process"><div class="n">03 / PROTECT</div><h3>선입금·인증 요구 주의</h3><p>대출을 빌미로 선입금, 통장·카드 양도, 인증번호 전달, 원격제어 앱 설치를 요구하면 응하지 마세요.</p></article></div><div class="notice">금융상품 계약은 반드시 해당 금융회사의 공식 홈페이지·앱·영업점에서 직접 확인하세요. 주머니티켓은 대출 승인이나 금융기관을 사칭하지 않습니다.</div></div></section>
+<section id="process"><div class="wrap"><div class="section-head center"><div class="kicker">SAFE CHECKLIST</div><h2>상담 전 확인할 사항</h2><p>개인정보와 계약상 권리를 안전하게 지키기 위한 기본 체크리스트입니다.</p></div><div class="feature-list"><article class="feature"><div class="n">CHECK 01</div><h4>본인 명의인지 확인</h4><p>계약 당사자와 실제 이용자가 일치하는지 확인합니다.</p></article><article class="feature"><div class="n">CHECK 02</div><h4>전체 비용을 서면으로 확인</h4><p>할부·요금·수수료·위약금 등 총 부담액을 확인합니다.</p></article><article class="feature"><div class="n">CHECK 03</div><h4>공식 기관에서 재확인</h4><p>통신사와 금융회사 공식 채널에서 조건을 다시 확인합니다.</p></article><article class="feature"><div class="n">CHECK 04</div><h4>민감정보 전달 금지</h4><p>비밀번호, 인증번호, 유심, 통장·카드를 타인에게 제공하지 않습니다.</p></article></div></div></section>
+<section id="contact" class="contact"><div class="wrap contact-layout"><div class="contact-copy"><div class="kicker">CUSTOMER CENTER</div><h2>관련 안내가 더 필요하신가요?<br>공식 채널로 문의해 주세요.</h2><p>문의 시 민감한 개인정보나 인증번호를 보내지 마세요. 개통 및 금융상품의 최종 조건은 반드시 해당 통신사·금융회사를 통해 확인해야 합니다.</p></div><div class="contact-box"><a class="contact-link" href="https://t.me/J_Money_Tk" target="_blank" rel="noopener"><span><strong>텔레그램 상담</strong><small>@J_Money_Tk</small></span><span class="link-arrow">상담하기 ↗</span></a><div class="contact-link"><span><strong>카카오톡 ID 상담</strong><small>ID를 복사한 뒤 카카오톡에서 친구 추가 → ID로 추가 → J_Money를 검색해 주세요.</small></span><button class="link-arrow" type="button" onclick="copyKakaoId()">ID 복사 ↗</button></div></div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-top"><div><div class="footer-brand">주머니티켓</div><div class="footer-desc">가개통 · 통신 · 금융 관련 일반 정보 안내</div></div><div>JUMONEY TICKET</div></div><div class="legal">사업자 상호·대표자·사업자등록번호·사업장 주소·연락처 등 공식 정보는 확인 후 기재해야 합니다.<br>대부업 관련 서비스 또는 광고는 실제 등록 범위와 법정 광고 표시사항을 별도로 검토한 후 게시해야 합니다.<br>© <span id="year"></span> JUMONEY TICKET. All rights reserved.</div></div><div class="wrap footer-page-links" style="padding:12px 0 20px;display:flex;gap:16px;flex-wrap:wrap;font-size:12px"><a href="index.html">1페이지 · 소액결제/상품권</a><a href="page2.html">2페이지 · 휴대폰 매입</a><a href="page3.html">3페이지 · 가개통/금융안내</a></div></footer>
+<div class="float-wrap"><button class="float kakao" type="button" onclick="copyKakaoId()">● 카카오톡 ID 복사</button><a class="float telegram" href="https://t.me/J_Money_Tk" target="_blank" rel="noopener">✈ 텔레그램 상담</a></div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();function copyKakaoId(){const id='J_Money';if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(id).then(()=>alert('카카오톡 ID J_Money를 복사했어요. 카카오톡에서 친구 추가 → ID로 추가를 선택해 검색해 주세요.')).catch(()=>window.prompt('카카오톡 ID를 복사해 주세요.',id));}else{window.prompt('카카오톡 ID를 복사해 주세요.',id);}}</script>
+
+<script>
+(function(){
+ const button=document.getElementById('copyInquiry');
+ if(!button)return;
+ const cleanPhone=value=>value.replace(/\D/g,'');
+ button.addEventListener('click',async()=>{
+  const type=document.getElementById('inquiryType').value;
+  const amount=document.getElementById('inquiryAmount').value.trim();
+  const note=document.getElementById('inquiryNote').value.trim();
+  const phone=cleanPhone(document.getElementById('customerContact').value);
+  const toast=document.getElementById('tradeToast');
+  if(!type){toast.textContent='문의 서비스를 선택해 주세요.';toast.classList.add('show');return;}
+  if(!/^01[016789]\d{7,8}$/.test(phone)){toast.textContent='휴대폰 번호를 숫자만 정확히 입력해 주세요.';toast.classList.add('show');return;}
+  const message=['[주머니티켓 상담 문의]','문의 서비스: '+type,'문의 금액: '+(amount?Number(amount).toLocaleString('ko-KR')+'원':'미기재'),'연락처: '+phone,'추가 문의: '+(note||'없음')].join('\n');
+  try{
+   if(navigator.clipboard && window.isSecureContext){await navigator.clipboard.writeText(message);toast.textContent='문의 내용이 복사됐어요. 텔레그램 상담을 열고 메시지 입력창에 붙여넣어 주세요.\n\n'+message;}
+   else{toast.textContent='아래 문의 내용을 길게 눌러 복사한 뒤 상담 채널에 붙여넣어 주세요.\n\n'+message;}
+  }catch(e){toast.textContent='자동 복사를 사용할 수 없습니다. 아래 내용을 길게 눌러 복사해 주세요.\n\n'+message;}
+  toast.classList.add('show');
+ });
+})();
+</script>
+
+</body></html>

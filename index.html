@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="주머니티켓 공식 안내 페이지. 휴대폰 소액결제 · 정보이용료 · 상품권 매입 관련 안내와 고객 문의 채널을 확인하세요.">
+<meta name="theme-color" content="#101b2b">
+<title>주머니티켓 | 공식 홈페이지</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap');
+:root{--ink:#172233;--navy:#101b2b;--navy2:#1b2c42;--gold:#c7a875;--gold2:#e6d4ae;--paper:#f7f6f2;--muted:#687487;--line:#e8e5dd;--white:#fff;--shadow:0 24px 70px rgba(16,27,43,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Noto Sans KR',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+header{height:82px;position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(23,34,51,.08)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-size:21px;font-weight:800;letter-spacing:-1px}.brand-mark{width:34px;height:34px;border:1px solid var(--gold);border-radius:10px;display:grid;place-items:center;color:var(--gold);font-family:Georgia,serif;font-size:19px}.brand span:last-child{color:var(--navy)}.brand em{font-style:normal;color:#a88750}nav{display:flex;align-items:center;gap:34px;font-size:13px;font-weight:600;color:#566174}nav a:hover{color:#a88750}.nav-cta{padding:11px 18px;border:1px solid var(--gold);border-radius:4px;color:#8e713f}
+.hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(ellipse at 80% 15%,rgba(199,168,117,.19),transparent 35%),linear-gradient(115deg,#101b2b 0%,#192b42 62%,#233750 100%);padding:112px 0 108px}.hero:before{content:"";position:absolute;width:600px;height:600px;border:1px solid rgba(230,212,174,.16);border-radius:50%;right:-130px;top:-260px;box-shadow:0 0 0 55px rgba(230,212,174,.035),0 0 0 110px rgba(230,212,174,.025)}.hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid rgba(230,212,174,.13);border-radius:50%;right:70px;bottom:-280px}.hero-inner{position:relative;z-index:1;max-width:760px}.eyebrow,.kicker{font-size:11px;letter-spacing:2.8px;font-weight:700;color:var(--gold2)}.hero h1{font-size:clamp(38px,5.5vw,66px);line-height:1.23;letter-spacing:-2.8px;margin:24px 0 20px;font-weight:700}.hero p{font-size:16px;line-height:1.9;color:#c8d0db;max-width:570px;margin:0 0 34px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{min-height:49px;padding:13px 22px;display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;letter-spacing:.1px;border-radius:3px;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:#152235}.btn-line{border:1px solid rgba(255,255,255,.35);color:#fff}.hero-note{margin-top:62px;padding-top:22px;border-top:1px solid rgba(255,255,255,.15);display:flex;gap:32px;flex-wrap:wrap;color:#b9c3cf;font-size:11px;letter-spacing:.4px}.hero-note b{color:#f0e3c9;font-weight:600;margin-right:7px}
+section{padding:96px 0}.section-head{margin-bottom:42px}.section-head.center{text-align:center}.kicker{color:#a88750}.section-head h2{font-size:34px;letter-spacing:-1.5px;margin:10px 0 8px;color:var(--navy)}.section-head p{margin:0;color:var(--muted);font-size:14px}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}.about-copy h3{font-size:27px;letter-spacing:-1px;line-height:1.45;margin:0 0 16px}.about-copy p{font-size:14px;color:var(--muted);margin:0}.about-stamp{margin-top:28px;display:inline-flex;align-items:center;gap:12px;color:#9a7b48;font-size:11px;letter-spacing:1.5px}.about-stamp:before{content:"";width:38px;height:1px;background:var(--gold)}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}.feature{padding:25px 24px;background:var(--paper);border:1px solid #efede7;min-height:150px}.feature .n{font-family:Georgia,serif;color:#b59661;font-size:13px}.feature h4{font-size:16px;margin:12px 0 5px}.feature p{font-size:12px;color:var(--muted);margin:0}
+.service{background:var(--paper)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{background:#fff;border:1px solid #ebe8e0;padding:30px 28px;min-height:222px;transition:.2s}.service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.service-icon{width:42px;height:42px;border:1px solid #d9c49d;color:#9b7c49;display:grid;place-items:center;font-family:Georgia,serif;font-size:18px}.service-card h3{font-size:18px;margin:20px 0 8px}.service-card p{font-size:13px;color:var(--muted);margin:0}.notice{margin-top:22px;padding:18px 20px;background:#fff;border-left:3px solid var(--gold);font-size:12px;color:#677386}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.process{padding:30px 28px 34px;border-right:1px solid var(--line)}.process:last-child{border:0}.process .n{font-family:Georgia,serif;color:#b59661;font-size:13px}.process h3{font-size:17px;margin:13px 0 7px}.process p{font-size:12px;color:var(--muted);margin:0}
+.contact{background:var(--navy);color:#fff}.contact-layout{display:grid;grid-template-columns:1fr .85fr;gap:60px;align-items:center}.contact h2{font-size:36px;line-height:1.35;letter-spacing:-1.5px;margin:13px 0}.contact-copy p{color:#b9c3cf;font-size:14px;max-width:460px}.contact-box{background:#fff;color:var(--ink);padding:12px 28px}.contact-link{display:flex;align-items:center;justify-content:space-between;padding:21px 0;border-bottom:1px solid var(--line)}.contact-link:last-child{border:0}.contact-link strong{display:block;font-size:15px}.contact-link small{display:block;font-size:11px;color:var(--muted);margin-top:3px}.link-arrow{font-size:12px;color:#987947;border:1px solid #d9c49d;padding:7px 12px}.link-disabled{font-size:11px;color:#9299a4;border:1px solid #e4e6e9;padding:7px 12px}
+footer{background:#0b1421;color:#aeb8c5;padding:42px 0 30px;font-size:11px}.footer-top{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-brand{font-size:18px;color:#fff;font-weight:800}.footer-desc{margin:6px 0 0;color:#8793a3}.legal{border-top:1px solid rgba(255,255,255,.12);margin-top:25px;padding-top:20px;color:#8995a5;line-height:2}.float-wrap{position:fixed;right:22px;bottom:22px;z-index:15;display:flex;flex-direction:column;gap:9px}.float{display:flex;align-items:center;gap:8px;padding:12px 17px;border-radius:3px;font-size:12px;font-weight:700;box-shadow:0 8px 28px rgba(0,0,0,.17)}.float.telegram{background:#fff;color:#172233}.float.kakao{background:#f4d85c;color:#352c10}
+@media(max-width:800px){header{height:70px}.wrap{width:calc(100% - 36px)}nav{gap:15px;font-size:11px}.nav-cta{display:none}.hero{padding:82px 0 70px}.hero h1{font-size:44px}.hero-note{margin-top:45px;gap:14px}.about-grid,.contact-layout{grid-template-columns:1fr;gap:34px}.service-grid{grid-template-columns:1fr}.service-card{min-height:0}.process-grid{grid-template-columns:1fr}.process{border-right:0;border-bottom:1px solid var(--line)}.process:last-child{border:0}section{padding:72px 0}.contact h2{font-size:31px}}
+@media(max-width:480px){.wrap{width:calc(100% - 30px)}.brand{font-size:18px}nav{gap:11px;font-size:10px}nav a:nth-child(2){display:none}.hero h1{font-size:38px;letter-spacing:-1.8px}.hero p{font-size:14px}.hero-note{font-size:10px}.section-head h2{font-size:29px}.feature-list{grid-template-columns:1fr}.contact-box{padding:8px 18px}.float-wrap{right:12px;bottom:12px}.float{padding:10px 13px}}
+/* Cherry blossom garden atmosphere */
+.hero{min-height:650px;background:radial-gradient(ellipse at 50% 5%,rgba(198,151,235,.36),transparent 36%),radial-gradient(ellipse at 50% 72%,rgba(244,169,203,.24),transparent 48%),linear-gradient(180deg,#211d3d 0%,#3b315d 46%,#69476f 78%,#342b4b 100%);}
+.hero:before{width:780px;height:780px;right:calc(50% - 390px);top:-510px;border-color:rgba(255,225,242,.18);box-shadow:0 0 0 70px rgba(255,224,241,.035),0 0 0 145px rgba(190,155,255,.045),0 0 100px rgba(255,192,225,.2)}
+.hero:after{width:100%;height:170px;left:0;right:auto;bottom:-110px;border:0;border-radius:50%;background:radial-gradient(ellipse at center,rgba(244,197,223,.23),transparent 70%);box-shadow:none}
+.garden-trees{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.92;filter:drop-shadow(0 8px 18px rgba(15,12,34,.22))}
+.hero-inner{z-index:2;text-shadow:0 2px 22px rgba(13,13,32,.25)}
+.hero-inner:before{content:"";position:absolute;inset:-42px -54px -36px -38px;z-index:-1;border:1px solid rgba(255,230,246,.13);border-radius:28px;background:linear-gradient(110deg,rgba(21,20,46,.56),rgba(39,30,67,.22));backdrop-filter:blur(3px);box-shadow:0 25px 80px rgba(13,10,35,.15)}
+.hero h1{color:#fff8fd;text-shadow:0 4px 28px rgba(244,169,203,.24)}
+.hero p{color:#f0e6f3}
+.hero-note{border-top-color:rgba(255,226,243,.25)}
+section#about,section#process,section#trade,section#live{position:relative;background:linear-gradient(180deg,#fffafd 0%,#f8f3ff 48%,#fff9fc 100%)}
+section#about:before,section#process:before,section#trade:before,section#live:before{content:"✿";position:absolute;right:5%;top:24px;font-size:46px;color:rgba(226,164,204,.16);pointer-events:none;transform:rotate(18deg)}
+.service{background:linear-gradient(145deg,#f8effb 0%,#fff5fa 48%,#f2efff 100%)!important}
+.contact{background:radial-gradient(ellipse at 80% 10%,rgba(169,138,255,.24),transparent 35%),linear-gradient(125deg,#171b35,#35264f 70%,#503455);}
+.contact-box{border-radius:18px;box-shadow:0 20px 60px rgba(10,8,30,.22)}
+@media(max-width:800px){.hero{min-height:620px}.garden-trees{opacity:.72}.hero-inner:before{inset:-25px -15px -24px}}
+@media(max-width:480px){.hero{min-height:650px}.garden-trees{width:150%;max-width:none;left:-25%;opacity:.62}.hero-inner:before{background:rgba(23,20,48,.62);backdrop-filter:blur(4px)}}
+/* Cherry blossom + purple glow premium refresh */
+:root{--blossom:#f4a9cb;--orchid:#a98aff;--violet:#7355c7;--gold:#d6b77d;--gold2:#f2dfbd;--shadow:0 22px 60px rgba(73,48,112,.13)}
+header{background:rgba(250,247,253,.92);border-bottom-color:rgba(169,138,255,.18)}
+.brand-mark{border-color:#d7a9ce;color:#9b6aa8;box-shadow:0 0 18px rgba(244,169,203,.2)}
+.brand em,nav a:hover{color:#a36ca6}
+.hero{background:radial-gradient(ellipse at 78% 18%,rgba(169,138,255,.32),transparent 33%),radial-gradient(ellipse at 12% 88%,rgba(244,169,203,.22),transparent 35%),linear-gradient(118deg,#101a30 0%,#252447 52%,#49345f 100%)}
+.hero:before{border-color:rgba(244,209,232,.24);box-shadow:0 0 0 55px rgba(169,138,255,.07),0 0 0 110px rgba(244,169,203,.045),0 0 90px rgba(169,138,255,.13)}
+.hero:after{border-color:rgba(244,169,203,.25);box-shadow:0 0 70px rgba(169,138,255,.13)}
+.eyebrow,.hero-note b{color:#f3cce1}.kicker{color:#a36ca6}
+.btn{border-radius:999px}.btn-gold{background:linear-gradient(115deg,#f2d7a8,#d6b77d 55%,#f6e5c5);box-shadow:0 8px 26px rgba(214,183,125,.23)}
+.btn-line{border-color:rgba(244,209,232,.55);background:rgba(255,255,255,.045);backdrop-filter:blur(8px)}
+section:not(.hero):not(.contact){background:linear-gradient(180deg,#fff 0%,#fdfaff 100%)}
+.service{background:linear-gradient(145deg,#fbf7ff 0%,#fff7fb 52%,#f7f4ff 100%)!important}
+.feature{background:linear-gradient(145deg,#fff 0%,#fcf8ff 100%);border-color:#eee3f2;border-radius:18px;box-shadow:0 10px 30px rgba(116,80,150,.055)}
+.service-card{border:1px solid #eee2f1;border-radius:18px;background:linear-gradient(145deg,#fff 0%,#fffbff 100%);box-shadow:0 12px 32px rgba(87,58,123,.06);position:relative;overflow:hidden}
+.service-card:before{content:"";position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,#f2b8d2,#ad91f2,#dfc18d);opacity:.85}
+.service-card:hover{box-shadow:0 20px 45px rgba(122,82,160,.16);border-color:#d9c4ed}
+.service-icon{border-color:#e4c9df;color:#9d6da8;border-radius:13px;background:linear-gradient(145deg,#fff7fc,#f5efff)}
+.section-head h2{background:linear-gradient(100deg,#18253c,#7453a0 70%,#b276a2);-webkit-background-clip:text;background-clip:text;color:transparent}
+.notice,.secure-note{border-left-color:#b28ae8;background:linear-gradient(100deg,#fbf7ff,#fff9fc)}
+.process-grid{border-color:#eadff0}.process{border-color:#eadff0}
+.contact{background:radial-gradient(ellipse at 85% 10%,rgba(169,138,255,.25),transparent 36%),radial-gradient(ellipse at 8% 90%,rgba(244,169,203,.13),transparent 38%),linear-gradient(120deg,#111b30,#302846 75%,#463354)}
+.contact-box{border-radius:18px;box-shadow:0 20px 55px rgba(0,0,0,.2)}
+.link-arrow{border-radius:999px;border-color:#e0c6e6;color:#8c5c9a}
+.float{border-radius:999px}.float.kakao{box-shadow:0 8px 28px rgba(244,216,92,.25)}
+.petal-field{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:12}
+.petal{position:absolute;top:-10vh;width:14px;height:20px;border-radius:85% 15% 75% 25%;background:linear-gradient(145deg,rgba(255,239,249,.98),rgba(244,169,203,.84) 58%,rgba(205,139,211,.7));box-shadow:0 1px 10px rgba(205,137,191,.24);opacity:0;animation:petal-drift 20s linear infinite;will-change:top,translate,rotate}
+.petal:nth-child(1){left:45%;animation-delay:26.63s;animation-duration:25s;scale:0.68;}
+.petal:nth-child(2){left:82%;animation-delay:24.26s;animation-duration:18s;scale:0.81;}
+.petal:nth-child(3){left:22%;animation-delay:21.89s;animation-duration:25s;scale:0.94;}
+.petal:nth-child(4){left:59%;animation-delay:19.52s;animation-duration:18s;scale:1.07;}
+.petal:nth-child(5){left:96%;animation-delay:17.15s;animation-duration:25s;scale:0.55;}
+.petal:nth-child(6){left:36%;animation-delay:14.78s;animation-duration:18s;scale:0.68;}
+.petal:nth-child(7){left:73%;animation-delay:12.41s;animation-duration:25s;scale:0.81;}
+.petal:nth-child(8){left:13%;animation-delay:10.04s;animation-duration:18s;scale:0.94;}
+.petal:nth-child(9){left:50%;animation-delay:7.67s;animation-duration:25s;scale:1.07;}
+.petal:nth-child(10){left:87%;animation-delay:5.30s;animation-duration:18s;scale:0.55;}
+.petal:nth-child(11){left:27%;animation-delay:2.93s;animation-duration:25s;scale:0.68;}
+.petal:nth-child(12){left:64%;animation-delay:0.56s;animation-duration:18s;scale:0.81;}
+.petal:nth-child(13){left:4%;animation-delay:27.19s;animation-duration:25s;scale:0.94;}
+.petal:nth-child(14){left:41%;animation-delay:24.82s;animation-duration:18s;scale:1.07;}
+.petal:nth-child(15){left:78%;animation-delay:22.45s;animation-duration:25s;scale:0.55;}
+.petal:nth-child(16){left:18%;animation-delay:20.08s;animation-duration:18s;scale:0.68;}
+.petal:nth-child(17){left:55%;animation-delay:17.71s;animation-duration:25s;scale:0.81;}
+.petal:nth-child(18){left:92%;animation-delay:15.34s;animation-duration:18s;scale:0.94;}
+.petal:nth-child(19){left:32%;animation-delay:12.97s;animation-duration:25s;scale:1.07;}
+.petal:nth-child(20){left:69%;animation-delay:10.60s;animation-duration:18s;scale:0.55;}
+.petal:nth-child(21){left:9%;animation-delay:8.23s;animation-duration:25s;scale:0.68;}
+.petal:nth-child(22){left:46%;animation-delay:5.86s;animation-duration:18s;scale:0.81;}
+.petal:nth-child(23){left:83%;animation-delay:3.49s;animation-duration:25s;scale:0.94;}
+.petal:nth-child(24){left:23%;animation-delay:1.12s;animation-duration:18s;scale:1.07;}
+.petal:nth-child(25){left:60%;animation-delay:27.75s;animation-duration:25s;scale:0.55;}
+.petal:nth-child(26){left:0%;animation-delay:25.38s;animation-duration:18s;scale:0.68;}
+.petal:nth-child(27){left:37%;animation-delay:23.01s;animation-duration:25s;scale:0.81;}
+.petal:nth-child(28){left:74%;animation-delay:20.64s;animation-duration:18s;scale:0.94;}
+@keyframes petal-drift{0%{top:-10vh;opacity:0;translate:0 0;rotate:0deg}7%{opacity:.82}48%{translate:55px 48vh;rotate:210deg}90%{opacity:.72}100%{top:110vh;opacity:0;translate:-35px 110vh;rotate:520deg}}
+@media(prefers-reduced-motion:reduce){.petal{animation:none;display:none}.service-card,.btn{transition:none}}
+@media(max-width:800px){.petal{opacity:.55}.service-card{border-radius:15px}}
+
+</style>
+</head>
+<body>
+<div class="petal-field" aria-hidden="true"><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i></div>
+<header><div class="wrap nav"><a class="brand" href="#home"><span class="brand-mark">J</span><span>주머니<em>티켓</em></span></a><nav><a href="index.html">1페이지 · 소액결제/상품권</a><a href="page2.html">2페이지 · 휴대폰 매입</a><a href="page3.html">3페이지 · 가개통/금융안내</a><a href="#about">회사소개</a><a href="#service">서비스 안내</a><a href="#process">이용절차</a><a href="#trade">매입 신청</a><a href="#live">거래 현황</a><a href="#contact">고객센터</a><a class="nav-cta" href="#contact">상담 채널</a></nav></div></header>
+<main id="home">
+<section class="hero"><svg class="garden-trees" viewBox="0 0 1600 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="branch" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4c3857"/><stop offset="1" stop-color="#9c6b8c"/></linearGradient><radialGradient id="bloom"><stop stop-color="#fff4fb"/><stop offset=".55" stop-color="#f6c4df"/><stop offset="1" stop-color="#d98fbd"/></radialGradient><radialGradient id="bloom2"><stop stop-color="#fff8fb"/><stop offset=".6" stop-color="#d9c5ff"/><stop offset="1" stop-color="#a78be1"/></radialGradient></defs><g fill="none" stroke="url(#branch)" stroke-linecap="round"><path d="M-50 610 Q120 420 155 245 Q180 105 330 35 M105 475 Q235 390 300 260 M155 245 Q70 170 48 90 M185 190 Q300 180 390 105" stroke-width="18"/><path d="M1650 620 Q1450 420 1430 230 Q1415 100 1280 15 M1490 465 Q1370 365 1300 250 M1430 230 Q1515 150 1555 65 M1410 190 Q1300 165 1210 85" stroke-width="20"/><path d="M0 510 Q130 410 205 330 M1600 500 Q1480 390 1390 310" stroke-width="9" opacity=".8"/></g><g id="flowers" fill="url(#bloom)"><g transform="translate(160 105)"><circle r="18"/><ellipse cy="-20" rx="13" ry="22"/><ellipse cy="20" rx="13" ry="22"/><ellipse cx="-20" rx="22" ry="13"/><ellipse cx="20" rx="22" ry="13"/><circle r="7" fill="#f5d58e"/></g><g transform="translate(275 205) scale(.8)"><circle r="18"/><ellipse cy="-20" rx="13" ry="22"/><ellipse cy="20" rx="13" ry="22"/><ellipse cx="-20" rx="22" ry="13"/><ellipse cx="20" rx="22" ry="13"/><circle r="7" fill="#f5d58e"/></g><g transform="translate(85 285) scale(.72)"><circle r="18"/><ellipse cy="-20" rx="13" ry="22"/><ellipse cy="20" rx="13" ry="22"/><ellipse cx="-20" rx="22" ry="13"/><ellipse cx="20" rx="22" ry="13"/><circle r="7" fill="#f5d58e"/></g><g transform="translate(350 75) scale(.65)"><circle r="18"/><ellipse cy="-20" rx="13" ry="22"/><ellipse cy="20" rx="13" ry="22"/><ellipse cx="-20" rx="22" ry="13"/><ellipse cx="20" rx="22" ry="13"/><circle r="7" fill="#f5d58e"/></g><g transform="translate(1425 110) scale(1.15)"><circle r="18"/><ellipse cy="-20" rx="13" ry="22"/><ellipse cy="20" rx="13" ry="22"/><ellipse cx="-20" rx="22" ry="13"/><ellipse cx="20" rx="22" ry="13"/><circle r="7" fill="#f5d58e"/></g><g transform="translate(1320 235) scale(.9)"><circle r="18"/><ellipse cy="-20" rx="13" ry="22"/><ellipse cy="20" rx="13" ry="22"/><ellipse cx="-20" rx="22" ry="13"/><ellipse cx="20" rx="22" ry="13"/><circle r="7" fill="#f5d58e"/></g><g transform="translate(1530 310) scale(.7)"><circle r="18"/><ellipse cy="-20" rx="13" ry="22"/><ellipse cy="20" rx="13" ry="22"/><ellipse cx="-20" rx="22" ry="13"/><ellipse cx="20" rx="22" ry="13"/><circle r="7" fill="#f5d58e"/></g><g transform="translate(1240 70) scale(.65)"><circle r="18"/><ellipse cy="-20" rx="13" ry="22"/><ellipse cy="20" rx="13" ry="22"/><ellipse cx="-20" rx="22" ry="13"/><ellipse cx="20" rx="22" ry="13"/><circle r="7" fill="#f5d58e"/></g></g><g fill="url(#bloom2)" opacity=".95"><g transform="translate(220 320) scale(.55)"><circle r="17"/><ellipse cy="-19" rx="12" ry="20"/><ellipse cy="19" rx="12" ry="20"/><ellipse cx="-19" rx="20" ry="12"/><ellipse cx="19" rx="20" ry="12"/><circle r="6" fill="#f5d58e"/></g><g transform="translate(1370 365) scale(.58)"><circle r="17"/><ellipse cy="-19" rx="12" ry="20"/><ellipse cy="19" rx="12" ry="20"/><ellipse cx="-19" rx="20" ry="12"/><ellipse cx="19" rx="20" ry="12"/><circle r="6" fill="#f5d58e"/></g></g></svg><div class="wrap"><div class="hero-inner"><div class="eyebrow">JUMONEY TICKET · OFFICIAL WEBSITE</div><h1>필요한 안내를<br>정확하고 투명하게.</h1><p>주머니티켓은 휴대폰 소액결제 매입, 정보이용료 매입, 상품권 매입 관련 정보를 명확하게 안내하고 고객 문의에 성실하게 응대합니다.</p><div class="actions"><a class="btn btn-gold" href="#contact">공식 상담 채널 보기&nbsp; ↗</a><a class="btn btn-line" href="#service">서비스 안내</a></div><div class="hero-note"><span><b>01</b> 명확한 안내</span><span><b>02</b> 절차 중심 상담</span><span><b>03</b> 고객 문의 지원</span></div></div></div></section>
+<section id="about"><div class="wrap about-grid"><div class="about-copy"><div class="kicker">ABOUT JUMONEY TICKET</div><h3>신뢰를 바탕으로<br>기본에 충실한 서비스를 제공합니다.</h3><p>주머니티켓 공식 홈페이지에서 휴대폰 소액결제 매입, 정보이용료 매입, 상품권 매입 관련 기본 안내와 고객 문의 채널을 확인하실 수 있습니다. 각 서비스는 이용 가능 여부와 조건을 사전에 확인하며 관련 법령, 통신사·결제사업자 정책 및 발행사 약관을 준수하는 것을 원칙으로 합니다.</p><div class="about-stamp">CLEAR INFORMATION · CUSTOMER FIRST</div></div><div class="feature-list"><article class="feature"><div class="n">01 / GUIDE</div><h4>명확한 서비스 안내</h4><p>취급 품목과 확인 절차를 이해하기 쉽게 안내합니다.</p></article><article class="feature"><div class="n">02 / CHECK</div><h4>거래 전 확인</h4><p>상품권 정보와 거래 가능 여부를 사전에 확인합니다.</p></article><article class="feature"><div class="n">03 / SUPPORT</div><h4>상담 채널 운영</h4><p>공식 문의 채널을 통해 궁금한 사항을 안내합니다.</p></article><article class="feature"><div class="n">04 / PRINCIPLE</div><h4>원칙을 지키는 거래</h4><p>관련 법령과 상품권 발행사 약관을 준수합니다.</p></article></div></div></section>
+<section id="service" class="service"><div class="wrap"><div class="section-head center"><div class="kicker">OUR SERVICE</div><h2>서비스 안내</h2><p>실제 취급 품목과 거래 조건은 상담을 통해 개별 확인해 주세요.</p></div><div class="service-grid"><article class="service-card"><div class="service-icon">01</div><h3>휴대폰 소액결제 매입</h3><p>휴대폰 소액결제 이용 건에 대한 매입 상담을 별도로 진행합니다. 통신사·결제사업자 정책과 이용 한도, 본인 확인 및 거래 가능 조건을 먼저 확인합니다.</p></article><article class="service-card"><div class="service-icon">02</div><h3>정보이용료 매입</h3><p>정보이용료 관련 매입 상담을 별도로 진행합니다. 결제 항목과 이용 내역, 결제사업자 약관 및 실제 처리 가능 여부를 확인한 뒤 안내합니다.</p></article><article class="service-card"><div class="service-icon">03</div><h3>상품권 매입</h3><p>상품권 종류와 권종, 유효기간 등 기본 정보를 확인한 뒤 매입 가능 여부와 관련 조건을 안내합니다.</p></article><article class="service-card"><div class="service-icon">04</div><h3>거래 절차 및 본인 확인</h3><p>거래 전 필요한 본인 확인, 결제·상품권 정보 확인 및 진행 절차를 안내합니다.</p></article><article class="service-card"><div class="service-icon">05</div><h3>고객 문의 지원</h3><p>공식 상담 채널을 통해 각 매입 서비스의 이용 조건과 관련 문의를 안내합니다.</p></article></div><div class="notice">안내: 휴대폰 소액결제 및 정보이용료는 통신사·결제사업자 약관과 관련 법령에 따른 이용 가능 여부 및 거래 조건을 확인한 뒤 진행합니다. 상품권은 적법한 소유·취득 여부와 발행사 약관에 따른 유효성 확인이 필요하며, 타인 명의·도난·분실·부정 취득 상품권은 거래할 수 없습니다.</div></div></section>
+<section id="process"><div class="wrap"><div class="section-head center"><div class="kicker">HOW IT WORKS</div><h2>문의 및 확인 절차</h2><p>거래 전 조건과 유의사항을 충분히 확인해 주세요.</p></div><div class="process-grid"><article class="process"><div class="n">STEP 01</div><h3>공식 채널로 문의</h3><p>상품권 종류와 기본 정보를 공식 상담 채널로 문의합니다.</p></article><article class="process"><div class="n">STEP 02</div><h3>정보 및 가능 여부 확인</h3><p>상품권 정보, 소유 권한 및 거래 조건을 확인합니다.</p></article><article class="process"><div class="n">STEP 03</div><h3>안내 확인 후 결정</h3><p>거래 조건과 유의사항을 확인한 뒤 진행 여부를 결정합니다.</p></article></div></div></section>
+
+<style>
+/* JuMoney inquiry form */
+.trade{background:#fff}.trade-panel{display:grid;grid-template-columns:1fr 1fr;gap:22px}.trade-card{border:1px solid var(--line);padding:26px;background:#fff;box-shadow:0 12px 35px rgba(16,27,43,.05)}.trade-card h3{margin:0 0 8px;font-size:19px;color:var(--navy)}.trade-card>p{margin:0 0 20px;color:var(--muted);font-size:12px}.field{display:grid;gap:7px;margin:14px 0}.field label{font-size:12px;font-weight:700;color:#435066}.field input,.field select,.field textarea{width:100%;min-height:45px;padding:11px 12px;border:1px solid #dfe3e9;border-radius:4px;font:inherit;font-size:13px;background:#fff;color:var(--ink)}.field textarea{min-height:90px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #c7a87555;border-color:#b59661}.secure-note{background:#f7f6f2;padding:13px 15px;font-size:11px;color:#596579;line-height:1.7;border-left:3px solid var(--gold);margin:16px 0}.trade-btn{width:100%;border:0;cursor:pointer;margin-top:8px}.hint{font-size:11px;color:var(--muted);line-height:1.6}.toast{display:none;margin-top:12px;padding:12px;background:#f7f6f2;color:#5f5137;font-size:12px;white-space:pre-wrap}.toast.show{display:block}.demo-label{display:inline-block;margin-left:7px;font-size:10px;color:#987947;border:1px solid #d9c49d;padding:2px 7px;vertical-align:middle}
+@media(max-width:800px){.trade-panel{grid-template-columns:1fr}nav a:nth-child(3),nav a:nth-child(4){display:none}}
+</style>
+<section id="trade" class="trade"><div class="wrap"><div class="section-head center"><div class="kicker">TRADE INQUIRY</div><h2>매입 상담 신청</h2><p>기본 문의 내용을 작성하면 주머니티켓 텔레그램 상담으로 바로 연결됩니다. 실제 거래 접수나 자동 송금은 진행되지 않습니다.</p></div><div class="trade-panel">
+<div class="trade-card"><h3>① 상담 내용</h3><p>상담받을 서비스와 금액을 선택해 주세요.</p><div class="field"><label for="inquiryType">문의 서비스</label><select id="inquiryType" required><option value="">서비스 선택</option><option>휴대폰 소액결제 매입</option><option>휴대폰 정보이용료 매입</option><option>상품권 매입</option><option>기타 문의</option></select></div><div class="field"><label for="inquiryAmount">문의 금액(원) · 선택</label><input id="inquiryAmount" type="number" min="0" step="1000" inputmode="numeric" placeholder="예: 50000"></div><div class="field"><label for="inquiryNote">추가 문의사항 · 선택</label><textarea id="inquiryNote" maxlength="300" placeholder="상담이 필요한 내용을 간단히 적어 주세요."></textarea></div><div class="secure-note">PIN번호, 상품권 이미지, 인증번호, 비밀번호, 카드정보는 입력하지 마세요. 발행사 공식 확인 및 거래 조건은 상담 과정에서 안전한 절차로 안내받으세요.</div></div>
+<div class="trade-card"><h3>② 연락처 및 문의 전달</h3><p>연락받을 휴대폰 번호만 입력해 주세요.</p><div class="field"><label for="customerContact">휴대폰 번호</label><input id="customerContact" type="tel" inputmode="numeric" autocomplete="tel" placeholder="01012345678" maxlength="11" pattern="01[016789][0-9]{7,8}" aria-describedby="contactHint" required><div class="hint" id="contactHint">숫자만 입력해 주세요. 예: 01012345678</div></div><div class="secure-note">입력한 내용은 상담 메시지를 만드는 데 사용되며, 버튼을 누르면 텔레그램에서 상담 대화창이 열립니다. 메시지를 확인한 뒤 전송 버튼을 눌러 주세요. 이 페이지가 문의 내용을 별도로 저장하지는 않습니다.</div><button class="btn btn-gold trade-btn" type="button" id="copyInquiry">작성한 내용으로 바로 상담 연결하기 ↗</button><button class="btn btn-line trade-btn" style="width:100%;margin-top:10px;color:#4c3d61;border-color:#d9c49d" type="button" onclick="copyKakaoId()">카카오톡 ID 복사 · J_Money</button><div id="tradeToast" class="toast" role="status" aria-live="polite"></div></div>
+</div>
+<div class="trade-card" style="grid-column:1/-1;margin-top:22px">
+ <div class="kicker">INTERACTIVE PREVIEW</div><h3>상품권 자동 매입 체험 <span class="demo-label">시뮬레이션</span></h3>
+ <p>화면 동작을 미리 체험하는 데모입니다. 실제 핀번호 검증·매입 승인·송금은 실행되지 않습니다.</p>
+ <div class="trade-panel" style="gap:18px">
+  <div>
+   <div class="field"><label for="demoGift">상품권 종류</label><select id="demoGift"><option value="0.90">컬쳐랜드 (예시 매입률 90%)</option><option value="0.88">해피머니 (예시 매입률 88%)</option><option value="0.87">북앤라이프 (예시 매입률 87%)</option></select></div>
+   <div class="field"><label for="demoValue">상품권 금액(원)</label><input id="demoValue" type="number" min="1000" step="1000" value="50000"></div>
+   <div class="field"><label for="demoPin">테스트용 핀번호 입력</label><input id="demoPin" type="text" maxlength="24" placeholder="실제 핀번호를 입력하지 마세요"></div>
+   <button class="btn btn-gold trade-btn" type="button" id="demoRun">자동 매입 흐름 체험하기</button>
+  </div>
+  <div><div class="secure-note"><b>데모 안전 안내</b><br>실제 상품권 PIN, 이미지, 인증번호를 입력하지 마세요. 테스트 문자열만 사용하세요. 입력값은 서버로 전송·저장되지 않습니다.</div>
+   <div id="demoResult" class="toast show" role="status" aria-live="polite">대기 중 · 상품권 종류와 금액을 선택한 뒤 체험 버튼을 눌러보세요.</div>
+   <div class="hint" style="margin-top:12px">표시된 매입률은 화면 예시이며 실제 매입률이나 지급 약속이 아닙니다. 실제 서비스는 제휴 API, 본인확인 및 정산 계약 완료 후 제공됩니다.</div>
+  </div>
+ </div>
+</div></div></section>
+<section id="live"><div class="wrap"><div class="section-head center"><div class="kicker">LIVE TRADE STATUS</div><h2>실시간 거래 현황</h2><p>실제 접수 데이터가 연결되면 거래 상태가 여기에 표시됩니다.</p></div><div class="status-list"><div class="status-empty">아직 실시간 거래 서버가 연결되지 않았습니다.<br>현재 표시되는 실제 거래내역은 없습니다.</div></div><p class="hint" style="margin-top:12px">※ 거래내역을 임의로 생성해 실시간 거래처럼 표시하지 않습니다. 서버 연결 후 실제 접수 건만 표시합니다.</p></div></section>
+<section id="contact" class="contact"><div class="wrap contact-layout"><div class="contact-copy"><div class="kicker">CUSTOMER CENTER</div><h2>상담이 필요하신가요?<br>공식 채널로 문의해 주세요.</h2><p>문의 내용과 상담 가능 시간은 채널 운영 상황에 따라 달라질 수 있습니다. 정확한 안내를 위해 상담 시 상품권 종류 등 기본 정보를 준비해 주세요.</p></div><div class="contact-box"><a class="contact-link" href="https://t.me/J_Money_Tk" target="_blank" rel="noopener"><span><strong>텔레그램 상담</strong><small>@J_Money_Tk</small></span><span class="link-arrow">상담하기 ↗</span></a><div class="contact-link"><span><strong>카카오톡 ID 상담</strong><small>ID를 복사한 뒤 카카오톡에서 친구 추가 → ID로 추가 → J_Money를 검색해 주세요.</small></span><button class="link-arrow" type="button" onclick="copyKakaoId()">ID 복사 ↗</button></div></div></div></section>
+</main>
+<footer><div class="wrap"><div class="footer-top"><div><div class="footer-brand">주머니티켓</div><div class="footer-desc">휴대폰 소액결제 · 정보이용료 · 상품권 매입 관련 공식 안내</div></div><div>JUMONEY TICKET</div></div><div class="legal">사업자 상호·대표자·사업자등록번호·사업장 주소·연락처 등 공식 정보는 확인 후 기재해야 합니다.<br>대부업 관련 서비스 또는 광고는 실제 등록 범위와 법정 광고 표시사항을 별도로 검토한 후 게시해야 합니다.<br>© <span id="year"></span> JUMONEY TICKET. All rights reserved.</div></div><div class="wrap footer-page-links" style="padding:12px 0 20px;display:flex;gap:16px;flex-wrap:wrap;font-size:12px"><a href="index.html">1페이지 · 소액결제/상품권</a><a href="page2.html">2페이지 · 휴대폰 매입</a><a href="page3.html">3페이지 · 가개통/금융안내</a></div></footer>
+<div class="float-wrap"><button class="float kakao" type="button" onclick="copyKakaoId()">● 카카오톡 ID 복사</button><a class="float telegram" href="https://t.me/J_Money_Tk" target="_blank" rel="noopener">✈ 텔레그램 상담</a></div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();function copyKakaoId(){const id='J_Money';if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(id).then(()=>alert('카카오톡 ID J_Money를 복사했어요. 카카오톡에서 친구 추가 → ID로 추가를 선택해 검색해 주세요.')).catch(()=>window.prompt('카카오톡 ID를 복사해 주세요.',id));}else{window.prompt('카카오톡 ID를 복사해 주세요.',id);}}</script>
+
+<script>
+(function(){
+ const button=document.getElementById('copyInquiry');
+ if(!button)return;
+ const cleanPhone=value=>value.replace(/\D/g,'');
+ button.addEventListener('click',()=>{
+  const type=document.getElementById('inquiryType').value;
+  const amount=document.getElementById('inquiryAmount').value.trim();
+  const note=document.getElementById('inquiryNote').value.trim();
+  const phone=cleanPhone(document.getElementById('customerContact').value);
+  const toast=document.getElementById('tradeToast');
+  if(!type){toast.textContent='문의 서비스를 선택해 주세요.';toast.classList.add('show');return;}
+  if(!/^01[016789]\d{7,8}$/.test(phone)){toast.textContent='휴대폰 번호를 숫자만 정확히 입력해 주세요.';toast.classList.add('show');return;}
+  const message=['[주머니티켓 매입 상담 신청]','문의 서비스: '+type,'문의 금액: '+(amount?Number(amount).toLocaleString('ko-KR')+'원':'미기재'),'연락처: '+phone,'추가 문의: '+(note||'없음')].join('\n');
+  const telegramUrl='https://t.me/J_Money_Tk?text='+encodeURIComponent(message);
+  toast.textContent='텔레그램 상담 대화창으로 연결합니다. 열린 대화창에서 문의 내용을 확인한 뒤 전송 버튼을 눌러 주세요. 메시지는 자동 전송되지 않습니다.';
+  toast.classList.add('show');
+  window.open(telegramUrl,'_blank','noopener,noreferrer');
+ });
+})();
+</script>
+
+
+<script>
+(()=>{const b=document.getElementById('demoRun');if(!b)return;b.addEventListener('click',()=>{
+ const amount=Number(document.getElementById('demoValue').value);const rate=Number(document.getElementById('demoGift').value);const pin=document.getElementById('demoPin').value.trim();const out=document.getElementById('demoResult');
+ if(!Number.isFinite(amount)||amount<1000){out.textContent='금액을 1,000원 이상 입력해 주세요.';return;}
+ if(!pin){out.textContent='테스트용 문자열을 입력해 주세요. 실제 PIN은 입력하지 마세요.';return;}
+ const payout=Math.floor(amount*rate);out.textContent='① 입력 확인 완료 (브라우저 데모)\n② 예시 매입률 적용: '+(rate*100).toFixed(0)+'%\n③ 예시 계산 금액: '+payout.toLocaleString('ko-KR')+'원\n④ 실제 핀번호 유효성: 확인하지 않음\n⑤ 실제 매입 승인·송금: 실행되지 않음\n\n데모 흐름이 정상 작동했습니다. 실제 거래는 제휴 API 연결 후에만 가능합니다.';
+ });})();
+</script>
+</body></html>

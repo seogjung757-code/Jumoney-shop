@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jumoneyticket",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-22",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "jumoney-ticket-db",
+      "database_id": "기존_D1_DATABASE_ID로_교체",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

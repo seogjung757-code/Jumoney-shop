@@ -1,0 +1,35 @@
+주머니티켓 중고폰 판매용 배포 패키지
+
+구성
+- public/index.html : 메인
+- public/page2.html : 중고폰 쇼핑/상세/장바구니/계좌이체/주문조회/관리자
+- public/page3.html : 가개통·금융 안내
+- src/worker.js : 주문·상품·관리자 API
+- migrations/0001_init.sql : D1 테이블
+- seed-products.sql : 초기 상품 4종 등록
+- wrangler.jsonc : Worker 배포 설정
+
+중요한 기존 DB 보존 절차
+1) wrangler.jsonc의 database_id에 기존 jumoney-ticket-db의 실제 database_id를 입력합니다. 새 D1을 만들지 마세요.
+2) 기존 DB에 products/orders/phone_sales 테이블이 이미 있으면 migrations/0001_init.sql을 다시 실행하지 않습니다.
+3) 상품 등록 SQL 실행:
+   npx wrangler d1 execute jumoney-ticket-db --remote --file=./seed-products.sql
+4) 기존 ADMIN_PASSWORD와 AUTH_SECRET이 이미 설정되어 있으면 다시 변경할 필요가 없습니다.
+5) npx wrangler deploy
+
+상품/가격 기준
+- 기존 대화에서 사용한 2026-11-21 TTM 참고 시세: Galaxy S23 428,000원 / Galaxy S22 311,000원 / iPhone 14 561,000원 / iPhone 15 764,000원.
+- 등록 판매가는 각각 기준 시세에 5,000~20,000원만 더한 값으로 설정했습니다.
+- 초기 재고는 요청에 따라 상품별 10~50개 범위로 설정했습니다.
+- 현재 seed는 4개 모델의 128GB A급 기준 상품입니다. 용량·색상·통신사·외관 등급별 실물 재고 옵션은 관리자에서 실제 보유 사양에 맞춰 별도 상품으로 추가 등록해야 합니다.
+- 상품 사진은 모델 참고용 이미지이며, 고객에게 발송되는 개별 실물 사진이 아닙니다. 실물 상태 사진과 상세설명은 실제 재고 확인 후 교체해야 합니다.
+
+구매/결제
+- 고객은 상품을 장바구니에 담고 배송정보를 입력해 주문합니다.
+- 주문 접수 시 서버에서 재고를 예약하고 주문번호를 발급합니다.
+- 고객은 우체국 70349602250336 / 예금주 윤석중으로 계좌이체합니다.
+- 입금 확인은 관리자가 실제 은행 거래내역을 확인한 뒤 수동으로 처리합니다. 자동 입금확인은 구현되어 있지 않습니다.
+
+주의
+- 이 패키지는 기존 Cloudflare 계정에 로그인하거나 배포를 대신 완료한 것이 아닙니다.
+- 정적 파일 업로더에 worker.js/wrangler.jsonc를 올리는 방식이 아닙니다. Wrangler Deploy를 사용해야 합니다.
