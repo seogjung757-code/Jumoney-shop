@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "jumoneyticket",
+  "name": "jumoney-shop",
   "main": "src/worker.js",
   "compatibility_date": "2026-11-22",
   "assets": {
@@ -12,7 +12,7 @@
     {
       "binding": "DB",
       "database_name": "jumoney-ticket-db",
-      "database_id": "기존_D1_DATABASE_ID로_교체",
+      "database_id": "44bdadbb-2527-46ed-ae70-f9db40a3984b",
       "migrations_dir": "migrations"
     }
   ]
